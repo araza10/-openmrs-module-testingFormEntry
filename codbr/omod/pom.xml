@@ -70,6 +70,13 @@
 			<scope>test</scope>
 		</dependency>
 		
+		<dependency>
+        <groupId>org.openmrs.module</groupId>
+        <artifactId>htmlformentry-api</artifactId>
+        <version>${htmlformentryModuleVersion}</version>
+        <scope>provided</scope>
+    </dependency>
+
 		<!-- End OpenMRS core -->
 
 	</dependencies>
