@@ -1,9 +1,9 @@
 <%@ include file="/WEB-INF/template/include.jsp" %>
- 
+<%--  
 <openmrs:htmlInclude file="${pageContext.request.contextPath}/moduleResources/patientnarratives/css/styles.css"/>
  
 <%@ page import="net.tanesha.recaptcha.ReCaptcha" %>
-<%@ page import="net.tanesha.recaptcha.ReCaptchaFactory" %>
+<%@ page import="net.tanesha.recaptcha.ReCaptchaFactory" %> --%>
  
 <c:set var="OPENMRS_DO_NOT_SHOW_PATIENT_SET" scope="request" value="true"/>
 <c:set var="pageFragment" value="${param.pageFragment != null && param.pageFragment}"/>
@@ -444,7 +444,7 @@
         </div>
  
     </div>
-    <div id="content-wrap">
+    <%-- <div id="content-wrap">
         <div id="info-wrap">
             <center>
                 <canvas id="myCanvas" width="400" height="200" style="border:1px solid #000000;">
@@ -465,7 +465,7 @@
         </div>
         <div id="info-wrap">
             </br></br>
-            <%--<form action="" method="post">--%>
+            <form action="" method="post">
             <%
                 ReCaptcha c = ReCaptchaFactory.newReCaptcha("6LdAWuMSAAAAAD3RQXMNBKgI9-1OiYjDx_sl0xYy", "6LdAWuMSAAAAALxWgnM5yRj_tGVRQCk4lit8rLHb", false);
                 out.print(c.createRecaptchaHtml(null, null));
@@ -473,9 +473,9 @@
  
             </br>
             <input id="submit" type="button" value="Submit" />
-            <%--</form>--%>
+            </form>
         </div>
-    </div>
+    </div> --%>
  
  
 </div>

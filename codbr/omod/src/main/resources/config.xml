@@ -32,6 +32,9 @@
 		CODBR.hbm.xml
 				
 	</mappingFiles>
+ 		<require_modules>
+        <require_module version="2.1.3">org.openmrs.module.htmlformentry</require_module>
+		</require_modules> 
 
 	<!-- Internationalization -->
 	<!-- All message codes should start with ${project.parent.artifactId}. -->

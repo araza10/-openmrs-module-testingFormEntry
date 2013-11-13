@@ -70,12 +70,12 @@
 			<scope>test</scope>
 		</dependency>
 		
-		<dependency>
+ 		<dependency>
         <groupId>org.openmrs.module</groupId>
         <artifactId>htmlformentry-api</artifactId>
         <version>${htmlformentryModuleVersion}</version>
-        <scope>provided</scope>
-    </dependency>
+        <!-- <scope>provided</scope> -->  
+    </dependency> 
 
 		<!-- End OpenMRS core -->
 
